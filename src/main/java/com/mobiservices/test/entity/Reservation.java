@@ -25,8 +25,8 @@ public class Reservation {
 
     @ManyToOne
     @JoinColumns({
-            @JoinColumn(name="id_trajet", referencedColumnName="idTrajet"),
-            @JoinColumn(name="date_trajet", referencedColumnName="dateTrajet")
+            @JoinColumn(name="trajet_id", referencedColumnName="id_trajet"),
+            @JoinColumn(name="trajet_date", referencedColumnName="date_trajet")
     })
     private Trajet trajet;
 }
